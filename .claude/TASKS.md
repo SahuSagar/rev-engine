@@ -7,7 +7,7 @@
 - After each phase: run tests, verify output, then commit + push to GitHub
 - Commit message format: "feat: complete phase X — [phase name]"
 
-## Current Status: ✅ Phase 2 — Data Layer (COMPLETE)
+## Current Status: ✅ Phase 3 — Homepage (COMPLETE)
 
 ---
 
@@ -38,24 +38,24 @@
 
 ---
 
-## Next Phase: 🚧 Phase 3 — Homepage (AWAITING APPROVAL)
+## Next Phase: 🚧 Phase 4 — Car Detail Page (AWAITING APPROVAL)
 
 ---
 
-## Phase 3 — Homepage (Car Gallery)
+## ✅ Phase 3 — Homepage (Car Gallery) (COMPLETE)
 > Goal: Beautiful homepage showing Ferrari 458 card
 
-- [ ] Build `CarCard` component with:
+- [x] Build `CarCard` component with:
   - Hero image (next/image, Unsplash URL)
   - Car name, year, origin badge
   - Engine type and power stat
   - Hover animation (Framer Motion)
-- [ ] Build `CarCardSkeleton` loading state
-- [ ] Build `CarGrid` component (responsive 1/2/3 column grid)
-- [ ] Build homepage `page.tsx` using CarGrid
-- [ ] Build `app/layout.tsx` with dark background, metadata
-- [ ] Add page entrance animation
-- [ ] Verify responsive layout at 375px, 768px, 1280px
+- [x] Build `CarCardSkeleton` loading state
+- [x] Build `CarGrid` component (responsive 1/2/3 column grid)
+- [x] Build homepage `page.tsx` using CarGrid
+- [x] Build `app/layout.tsx` with dark background, metadata
+- [x] Add page entrance animation
+- [x] Verify responsive layout at 375px, 768px, 1280px
 
 ---
 

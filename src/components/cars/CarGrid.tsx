@@ -1,4 +1,5 @@
 import type { CarSpec } from '@/types/car'
+import { CarCard } from './CarCard'
 
 interface CarGridProps {
   cars: CarSpec[]
@@ -6,9 +7,9 @@ interface CarGridProps {
 
 export function CarGrid({ cars }: CarGridProps) {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {cars.map(car => (
-        <div key={car.slug}>{car.name}</div>
+        <CarCard key={car.slug} car={car} />
       ))}
     </div>
   )
