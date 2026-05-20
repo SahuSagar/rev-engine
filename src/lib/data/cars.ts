@@ -28,9 +28,9 @@ export const cars: CarSpec[] = [
       highRev: '/sounds/ferrari-458/high-rev.mp3',
     },
     images: {
-      hero: 'https://images.unsplash.com/photo-1533473359331-35acde7260c9?w=1920&h=1080&fit=crop',
-      side: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=900&fit=crop',
-      engine: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=900&fit=crop',
+      hero: '/images/ferrari-458/hero.jpg',
+      side: '/images/ferrari-458/side.jpg',
+      engine: '/images/ferrari-458/front.jpg',
     },
   },
 ] as const
