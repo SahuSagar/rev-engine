@@ -7,7 +7,7 @@
 - After each phase: run tests, verify output, then commit + push to GitHub
 - Commit message format: "feat: complete phase X — [phase name]"
 
-## Current Status: ✅ Phase 3 — Homepage (COMPLETE)
+## Current Status: ✅ Phase 4 — Car Detail Page (COMPLETE)
 
 ---
 
@@ -38,7 +38,7 @@
 
 ---
 
-## Next Phase: 🚧 Phase 4 — Car Detail Page (AWAITING APPROVAL)
+## Next Phase: 🚧 Phase 5 — Audio Engine (AWAITING APPROVAL)
 
 ---
 
@@ -59,20 +59,20 @@
 
 ---
 
-## Phase 4 — Car Detail Page
+## ✅ Phase 4 — Car Detail Page (COMPLETE)
 > Goal: Full Ferrari 458 detail page with specs and engine info
 
-- [ ] Build `CarHero` component (large hero image + name overlay)
-- [ ] Build `SpecTable` component (car specs grid)
-- [ ] Build `EngineDetails` component:
+- [x] Build `CarHero` component (large hero image + name overlay)
+- [x] Build `SpecTable` component (car specs grid)
+- [x] Build `EngineDetails` component:
   - Engine code, type, displacement
   - Power, torque, redline
-  - "Why it sounds" section with bullet points
-- [ ] Build car detail `page.tsx` layout
-- [ ] Add `generateMetadata` for SEO
-- [ ] Add `loading.tsx` skeleton
-- [ ] Add `not-found.tsx` for invalid slugs
-- [ ] Verify navigation from homepage → detail page
+  - "Why it sounds" section with description
+- [x] Build car detail `page.tsx` layout
+- [x] Add `generateMetadata` for SEO
+- [x] Add `loading.tsx` skeleton
+- [x] Add `not-found.tsx` for invalid slugs
+- [x] Verify navigation from homepage → detail page
 
 ---
 
