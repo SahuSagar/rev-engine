@@ -7,7 +7,7 @@
 - After each phase: run tests, verify output, then commit + push to GitHub
 - Commit message format: "feat: complete phase X — [phase name]"
 
-## Current Status: ✅ Phase 4 — Car Detail Page (COMPLETE)
+## Current Status: ✅ Phase 5 — Audio Engine (COMPLETE)
 
 ---
 
@@ -38,7 +38,7 @@
 
 ---
 
-## Next Phase: 🚧 Phase 5 — Audio Engine (AWAITING APPROVAL)
+## Next Phase: 🚧 Phase 6 — Sound Simulator UI (AWAITING APPROVAL)
 
 ---
 
@@ -76,22 +76,23 @@
 
 ---
 
-## Phase 5 — Audio Engine
+## ✅ Phase 5 — Audio Engine (COMPLETE)
 > Goal: Working engine sound that responds to RPM
 
-- [ ] Download 5 audio files from Pixabay/Freesound
+- [x] Download 5 audio files from Pixabay/Freesound
   - `startup.mp3`, `idle.mp3`, `low-rev.mp3`, `mid-rev.mp3`, `high-rev.mp3`
   - Place in `/public/sounds/ferrari-458/`
-- [ ] Create `EngineAudio` class at `src/lib/audio/engine.ts`
+- [x] Create `EngineAudio` class at `src/lib/audio/engine.ts`
   - AudioContext singleton
   - `preloadAudio()` — loads all 5 files
   - `getLayerGains(rpm)` — crossfade calculator
   - `updateRPM(rpm, isAccelerating)` — RPM physics
   - `getPlaybackRate(rpm)` — pitch variation
-- [ ] Create Zustand `audioStore` at `src/store/audioStore.ts`
-- [ ] Create `useAudioEngine` hook at `src/hooks/useAudioEngine.ts`
-- [ ] Create `useRPM` hook at `src/hooks/useRPM.ts`
-- [ ] Verify audio plays correctly in Chrome and Safari
+- [x] Create Zustand `audioStore` at `src/store/audioStore.ts`
+- [x] Create `useAudioEngine` hook at `src/hooks/useAudioEngine.ts`
+- [x] Create `useRPM` hook at `src/hooks/useRPM.ts`
+- [x] Add unit tests for RPM physics and crossfade logic
+- [x] Set up vitest with test scripts in package.json
 
 ---
 

@@ -4,6 +4,7 @@ import { getCarBySlug } from '@/lib/data/cars'
 import { CarHero } from '@/components/cars/CarHero'
 import { SpecTable } from '@/components/cars/SpecTable'
 import { EngineDetails } from '@/components/cars/EngineDetails'
+import { AudioEngineWrapper } from '@/components/audio/AudioEngineWrapper'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -53,10 +54,11 @@ export default async function CarPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Placeholder for audio simulator (Phase 6) */}
+      {/* Audio Engine */}
       <div className="px-6 md:px-12 lg:px-24 pb-16 md:pb-20">
-        <div className="rounded-2xl border border-white/10 bg-ferrari-card/50 p-8 md:p-12 text-center">
-          <p className="text-white/60">Sound Simulator coming soon...</p>
+        <div className="space-y-8">
+          <h2 className="text-2xl font-semibold">Sound Simulator</h2>
+          <AudioEngineWrapper carSlug={car.slug} />
         </div>
       </div>
     </main>
