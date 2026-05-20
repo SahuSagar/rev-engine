@@ -1,5 +1,11 @@
 # Git Rules
 
+## Commit Rules
+
+- Never include "Co-Authored-By" in commit messages
+- Never include any Claude attribution in commits
+- Keep commit messages clean and simple
+
 ## Branch Naming
 
 ```

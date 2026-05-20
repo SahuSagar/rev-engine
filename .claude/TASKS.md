@@ -7,7 +7,7 @@
 - After each phase: run tests, verify output, then commit + push to GitHub
 - Commit message format: "feat: complete phase X — [phase name]"
 
-## Current Status: ✅ Phase 1 — Project Setup (COMPLETE)
+## Current Status: ✅ Phase 2 — Data Layer (COMPLETE)
 
 ---
 
@@ -27,18 +27,18 @@
 
 ---
 
-## Phase 2 — Data Layer
+## ✅ Phase 2 — Data Layer (COMPLETE)
 > Goal: All Ferrari 458 data typed and accessible
 
-- [ ] Define TypeScript interfaces in `src/types/car.ts`
+- [x] Define TypeScript interfaces in `src/types/car.ts`
   - `CarSpec`, `EngineSpec`, `AudioConfig`, `CarImages`, `AudioGains`
-- [ ] Create `src/lib/data/cars.ts` with Ferrari 458 Italia full data object
-- [ ] Add utility functions: `getCarBySlug()`, `getAllCars()`
-- [ ] Verify TypeScript strict mode passes with no errors
+- [x] Create `src/lib/data/cars.ts` with Ferrari 458 Italia full data object
+- [x] Add utility functions: `getCarBySlug()`, `getAllCars()`
+- [x] Verify TypeScript strict mode passes with no errors
 
 ---
 
-## Next Phase: 🚧 Phase 2 — Data Layer (AWAITING APPROVAL)
+## Next Phase: 🚧 Phase 3 — Homepage (AWAITING APPROVAL)
 
 ---
 
