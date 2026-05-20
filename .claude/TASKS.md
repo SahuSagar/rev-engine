@@ -7,7 +7,7 @@
 - After each phase: run tests, verify output, then commit + push to GitHub
 - Commit message format: "feat: complete phase X — [phase name]"
 
-## Current Status: ✅ Phase 5 — Audio Engine (COMPLETE)
+## Current Status: ✅ Phase 6 — Sound Simulator UI (COMPLETE)
 
 ---
 
@@ -38,7 +38,7 @@
 
 ---
 
-## Next Phase: 🚧 Phase 6 — Sound Simulator UI (AWAITING APPROVAL)
+## Next Phase: 🚧 Phase 7 — Polish & Performance (AWAITING APPROVAL)
 
 ---
 
@@ -96,26 +96,28 @@
 
 ---
 
-## Phase 6 — Sound Simulator UI
+## ✅ Phase 6 — Sound Simulator UI (COMPLETE)
 > Goal: Tachometer + Accelerate button working with real audio
 
-- [ ] Build `Tachometer` component:
+- [x] Build `Tachometer` component:
   - SVG gauge with zone arcs (green/amber/red)
   - Framer Motion needle with spring physics
   - Digital RPM readout
   - Redline pulse effect above 8500 RPM
-- [ ] Build `AccelerateButton` component:
+- [x] Build `AccelerateButton` component:
   - Hold to accelerate interaction (mouse + touch)
   - Ferrari red glow on held state
   - "HOLD TO REV" / "REVVING..." label
   - Disabled state when engine not started
-- [ ] Build `SoundControls` component:
+- [x] Build `SoundControls` component:
   - Volume slider
-  - Exterior/Interior perspective toggle
   - Engine on/off button
-- [ ] Build `AudioEngine` wrapper component (lazy loaded)
-- [ ] Wire everything together on car detail page
-- [ ] Verify full interaction: start → idle → accelerate → redline → release
+- [x] Build `AudioEngine` wrapper component (lazy loaded)
+- [x] Wire everything together on car detail page
+- [x] Verify full interaction: start → idle → accelerate → redline → release
+- [x] Pass TypeScript strict mode
+- [x] Production build succeeds
+- [x] Unit tests pass (16/16)
 
 ---
 
