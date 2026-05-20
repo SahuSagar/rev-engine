@@ -25,6 +25,8 @@ export function AccelerateButton({
       onTouchEnd={onAccelerateEnd}
       disabled={disabled}
       data-testid="accelerate-button"
+      aria-label={isRevving ? "Engine revving" : "Hold to accelerate engine"}
+      aria-pressed={isRevving}
       whileTap={{ scale: 0.97 }}
       animate={isRevving ? { scale: 1.05 } : { scale: 1 }}
       className={cn(

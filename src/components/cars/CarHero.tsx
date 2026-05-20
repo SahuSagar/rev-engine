@@ -22,6 +22,8 @@ export function CarHero({ car }: CarHeroProps) {
         fill
         priority
         className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23111111' width='1920' height='1080'/%3E%3C/svg%3E"
       />
 
       {/* Gradient overlay */}

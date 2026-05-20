@@ -11,11 +11,12 @@ interface CarCardProps {
 
 export function CarCard({ car }: CarCardProps) {
   return (
-    <Link href={`/cars/${car.slug}`}>
+    <Link href={`/cars/${car.slug}`} aria-label={`View ${car.name} details`}>
       <motion.div
         className="group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-ferrari-card transition-colors duration-200 hover:border-white/20"
         whileHover={{ y: -4 }}
         transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+        role="article"
       >
         <div className="relative h-64 overflow-hidden bg-white/5">
           <Image
@@ -24,6 +25,8 @@ export function CarCard({ car }: CarCardProps) {
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23111111' width='1920' height='1080'/%3E%3C/svg%3E"
           />
         </div>
 

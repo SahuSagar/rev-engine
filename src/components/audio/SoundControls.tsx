@@ -20,6 +20,8 @@ export function SoundControls({
       {/* Engine Toggle Button */}
       <button
         onClick={onEngineToggle}
+        aria-label={isEngineOn ? "Stop engine" : "Start engine"}
+        aria-pressed={isEngineOn}
         className={cn(
           'w-full px-6 py-3 rounded-lg font-semibold transition-all duration-150',
           'focus-visible:ring-2 focus-visible:ring-ferrari-red',
@@ -33,14 +35,16 @@ export function SoundControls({
 
       {/* Volume Control */}
       <div className="space-y-3">
-        <label className="block text-sm text-white/60">Volume</label>
+        <label htmlFor="volume-control" className="block text-sm text-white/60">Volume</label>
         <div className="flex items-center gap-4">
           <input
+            id="volume-control"
             type="range"
             min={0}
             max={100}
             value={volume}
             onChange={e => onVolumeChange(Number(e.target.value))}
+            aria-label="Adjust engine volume"
             className="flex-1 h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-ferrari-red"
           />
           <span className="min-w-8 text-right text-sm text-white/60">{volume}%</span>

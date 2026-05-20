@@ -6,6 +6,8 @@ import { useAudioEngine } from '@/hooks/useAudioEngine'
 import { Tachometer } from './Tachometer'
 import { AccelerateButton } from './AccelerateButton'
 import { SoundControls } from './SoundControls'
+import { AudioErrorBoundary } from './AudioErrorBoundary'
+import { AudioUnsupported } from './AudioUnsupported'
 
 interface AudioEngineProps {
   carSlug: string
@@ -26,29 +28,35 @@ export function AudioEngine({ carSlug }: AudioEngineProps) {
 
   if (error) {
     return (
-      <div className="text-center text-ferrari-red">
-        <p>Audio not supported in your browser</p>
-      </div>
+      <AudioUnsupported>
+        <div className="rounded-2xl border border-white/10 bg-ferrari-card p-6 text-center">
+          <p className="text-white/70">Audio not supported in your browser</p>
+        </div>
+      </AudioUnsupported>
     )
   }
 
   return (
-    <div className="flex flex-col items-center gap-12">
-      <Tachometer rpm={rpm} maxRPM={MAX_RPM} />
+    <AudioErrorBoundary>
+      <AudioUnsupported>
+        <div className="flex flex-col items-center gap-12">
+          <Tachometer rpm={rpm} maxRPM={MAX_RPM} />
 
-      <AccelerateButton
-        onAccelerateStart={startAccelerating}
-        onAccelerateEnd={stopAccelerating}
-        disabled={!isEngineOn || !isLoaded}
-        isRevving={isAccelerating && isEngineOn}
-      />
+          <AccelerateButton
+            onAccelerateStart={startAccelerating}
+            onAccelerateEnd={stopAccelerating}
+            disabled={!isEngineOn || !isLoaded}
+            isRevving={isAccelerating && isEngineOn}
+          />
 
-      <SoundControls
-        volume={volume}
-        onVolumeChange={setVolume}
-        isEngineOn={isEngineOn}
-        onEngineToggle={() => setIsEngineOn(!isEngineOn)}
-      />
-    </div>
+          <SoundControls
+            volume={volume}
+            onVolumeChange={setVolume}
+            isEngineOn={isEngineOn}
+            onEngineToggle={() => setIsEngineOn(!isEngineOn)}
+          />
+        </div>
+      </AudioUnsupported>
+    </AudioErrorBoundary>
   )
 }
